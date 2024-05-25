@@ -92,7 +92,7 @@
     </style>
     <script>
         function redirecionarParaDiscord() {
-            window.location.href = "https://discord.gg/Pncr9Gcu";
+            window.open("https://discord.gg/Pncr9Gcu", "_blank");
         }
     </script>
 </head>
@@ -108,7 +108,7 @@
             LOCAL: <a href="https://discord.gg/Pncr9Gcu" target="_blank" style="color: #007BFF;">DISCORD</a><br>
             HORARIO: 08h
         </div>
-        <form action="https://formspree.io/f/xnqeygbg" method="POST" onsubmit="setTimeout(redirecionarParaDiscord, 1000)">
+        <form action="https://formspree.io/f/xnqeygbg" method="POST" onsubmit="redirecionarParaDiscord()">
             <label for="name">Nome:</label>
             <input type="text" id="name" name="name" required>
             
@@ -118,7 +118,7 @@
                 <option value="no">Não estarei presente</option>
             </select>
             
-            <button type="submit">Enviar</button>
+            <button type="submit" onclick="redirecionarParaDiscord()">Enviar</button>
         </form>
     </div>
 </body>
