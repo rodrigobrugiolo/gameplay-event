@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #1b1b1b;
+            background-color: #E38717; /* Cor de fundo alterada */
             color: #ffffff;
             margin: 0;
             padding: 0;
@@ -91,9 +91,8 @@
         }
     </style>
     <script>
-        function mostrarMensagem() {
-            document.getElementById("form-container").style.display = "none";
-            document.getElementById("mensagem").style.display = "block";
+        function redirecionarParaDiscord() {
+            window.location.href = "https://discord.gg/Pncr9Gcu";
         }
     </script>
 </head>
@@ -109,7 +108,7 @@
             LOCAL: <a href="https://discord.gg/Pncr9Gcu" target="_blank" style="color: #007BFF;">DISCORD</a><br>
             HORARIO: 08h
         </div>
-        <form action="https://formspree.io/f/xnqeygbg" method="POST" onsubmit="mostrarMensagem()">
+        <form action="https://formspree.io/f/xnqeygbg" method="POST" onsubmit="redirecionarParaDiscord()">
             <label for="name">Nome:</label>
             <input type="text" id="name" name="name" required>
             
@@ -121,11 +120,6 @@
             
             <button type="submit">Enviar</button>
         </form>
-    </div>
-
-    <div id="mensagem">
-        <h2>Obrigado pelo seu envio!</h2>
-        <p>Sua resposta foi recebida com sucesso.</p>
     </div>
 </body>
 </html>
