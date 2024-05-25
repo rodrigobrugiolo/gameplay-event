@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento de Gameplay</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1b1b1b;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .image {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .image img {
+            max-width: 100%;
+            height: auto;
+        }
+        .message-20 {
+            margin: 0 10%;
+            text-align: center;
+            font-size: 24px;
+            background-color: #ffffff;
+            color: #000000;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .message-35 {
+            margin: 20px 15%;
+            text-align: center;
+            font-size: 24px;
+            background-color: #ffffff;
+            color: #000000;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        form {
+            text-align: center;
+            margin-top: 20px;
+        }
+        label, select, input[type="text"] {
+            display: block;
+            margin: 10px auto;
+            font-size: 18px;
+            color: #ffffff;
+        }
+        input[type="text"], select {
+            padding: 10px;
+            width: 80%;
+            max-width: 300px;
+            box-sizing: border-box;
+            color: #000000;
+        }
+        input[type="text"]:focus, select:focus {
+            color: #000000;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #007BFF;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Counter_Strike_2_Logo.png" alt="Counter Strike 2 Logo">
+        </div>
+        <div class="message-20">
+            AMANHÃ, SOMENTE AMANHÃ VOCÊ APROVEITA A MELHOR GAMEPLAY DA SEMANA!!!
+        </div>
+        <div class="message-35">
+            LOCAL: <a href="https://discord.gg/Pncr9Gcu" target="_blank" style="color: #007BFF;">DISCORD</a><br>
+            HORARIO: 08h
+        </div>
+        <form action="https://formspree.io/f/xnqeygbg" method="POST">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="presence">Você estará presente?</label>
+            <select id="presence" name="presence" required>
+                <option value="yes">Estarei presente</option>
+                <option value="no">Não estarei presente</option>
+            </select>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
